@@ -88,7 +88,7 @@ class DirectorVehicleManufacturer(object):
         return self.builder.vehicle
 
 #==============================================================================
-if (__name__ == "__main__"):
+def main():
     manufacturer = DirectorVehicleManufacturer()
 
     manufacturer.builder = CarBuilder()
@@ -98,3 +98,7 @@ if (__name__ == "__main__"):
     manufacturer.builder = BikeBuilder()
     bike = manufacturer.create()
     bike.view()
+
+#==============================================================================
+if (__name__ == "__main__"):
+    main()
